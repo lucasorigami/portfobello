@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "national-park";
+    src: url('fonts/woff/NationalPark-Medium.woff');
+}
+
+body {
+    /* font-family: sans-serif; */
+    font-family: national-park;
+    background-color: #000000;
+    /* background-color: #fff689; */
+    color: white;
+    margin: 0;
+}
+
+.big {
+    font-size: larger;
+    margin-bottom: 0.1em;
+}
+
+.small {
+    font-size: medium;
+    margin: 2em;
+    max-width: 70ex;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.header img {
+    width: 300px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    height: 70vh;
+    font-size: 1.3em;
+}
+
+a {
+    display:contents;
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+    padding: 10px;
+    height: 5em;
+    background-color: #fdff71;
+    border-radius: 2em;
+    color: black;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    color: #fdff71;
+    background-color: #000000;
+    outline: solid 2px #fdff71;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.promises {
+    background-color: #fdff71;
+    margin-inline: 4em;
+    padding-inline: 20%;
+    padding-top: 2em;
+    border-radius: 20px 20px 0 0;
+    color: black;
+    padding-block-end: 3em;
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        font-size: 1.2em;
+
+    }
+    .button {
+        width: 80%;
+        
+    }
+}

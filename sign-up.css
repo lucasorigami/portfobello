@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "national-park";
+    src: url('fonts/woff/NationalPark-Medium.woff');
+}
+
+
+
+body {
+    /* font-family: sans-serif; */
+    font-family: national-park;
+    /* background-color: #fff689; */
+    margin: 0;
+    background-color: #fdff71;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2em;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    height:4em;
+    background-color: #fdff71;
+    border-radius: 2em;
+    color: black;
+    text-align: center;
+    transition: all 0.3s;
+    margin-top: 2em;
+    border: none;
+    outline: solid 2px #000000;
+}
+
+form {
+    max-width: 120ex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+    color: #fdff71;
+    background-color: #000000;
+    outline: solid 2px #fdff71;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+input {
+        height:2em;
+        width: 90%;
+}
+
+/* 
+input {
+    width: 40%;
+    margin: 10px;
+    background-color: black;
+    height: 2em;
+    border: none;
+    border-radius: 0;
+    color: #fdff71;
+} */
